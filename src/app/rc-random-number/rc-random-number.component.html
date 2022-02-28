@@ -10,6 +10,7 @@
             <input
                 type="number"
                 matInput
+                [(ngModel)]="min"
             >
         </mat-form-field>
         &nbsp; to &nbsp;
@@ -20,14 +21,18 @@
             <input
                 type="number"
                 matInput
+                [(ngModel)]="max"
             >
         </mat-form-field>
         &nbsp;
         <button
             mat-mini-fab
+            color="primary"
+            (click)="generate()"
         >
             Go!
         </button>
         &nbsp;
+        {{ randomNumber }}
     </mat-card-content>
 </mat-card>
