@@ -10,6 +10,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field'
 import { RcRandomNumberComponent } from './rc-random-number/rc-random-number.component';
 
 @NgModule({
@@ -25,6 +27,8 @@ import { RcRandomNumberComponent } from './rc-random-number/rc-random-number.com
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
+    , MatInputModule
+    , MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
