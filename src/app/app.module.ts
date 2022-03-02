@@ -10,11 +10,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatSlideToggle, MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { IpAdditionComponent } from './ip-addition/ip-addition.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PizzaToppingsComponent
+    PizzaToppingsComponent,
+    IpAdditionComponent
   ],
   imports: [
     BrowserModule
@@ -23,6 +26,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
+    , MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
