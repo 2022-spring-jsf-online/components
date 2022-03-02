@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ShopService } from '../shop.service';
 @Component({
   selector: 'app-shopping-cart',
   templateUrl: './shopping-cart.component.html',
@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShoppingCartComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+      private shopSvc: ShopService
+  ) { }
 
   ngOnInit(): void {
+      const sc = this.shopSvc.getShoppingCartItems();
+      console.log(sc); 
   }
 
 }
