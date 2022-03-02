@@ -10,11 +10,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PizzaToppingsComponent
+    PizzaToppingsComponent,
+    ShoppingCartComponent
   ],
   imports: [
     BrowserModule
