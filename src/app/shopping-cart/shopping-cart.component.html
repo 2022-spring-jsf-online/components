@@ -1,1 +1,6 @@
-<p>shopping-cart works!</p>
+<h2>Shopping Cart Component</h2>
+<div
+ *ngFor = "let sc of myCart"
+>
+    {{ sc.item }} {{ sc.quantity }}
+</div>
