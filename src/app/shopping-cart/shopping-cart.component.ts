@@ -21,6 +21,12 @@ export class ShoppingCartComponent implements OnInit {
   ngOnInit(): void {
       const sc = this.shopSvc.getShoppingCartItems();
       console.log(sc);
+
+      this.myCart = sc.map(
+          x => ({
+              ...x
+          })
+      );
   }
 
 }
