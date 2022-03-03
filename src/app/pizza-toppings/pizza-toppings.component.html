@@ -3,6 +3,20 @@
         Available Pizza Toppings
     </mat-card-title>
     <mat-card-content>
+        <button
+            mat-mini-fab
+            (click)="checkAll()"
+        >
+            All
+        </button>
+        &nbsp;
+        <button
+            mat-mini-fab
+            color="secondary"
+            (click)="unCheckAll()"
+        >
+            None
+        </button>
 
         <!-- <h2>Available Pizza Toppings</h2> -->
     <div
@@ -10,7 +24,7 @@
     <label>
         <mat-checkbox
         [(ngModel)]="pt.checked">
-        
+
         {{pt.name}} ({{pt.price |currency}})
         </mat-checkbox>
     </label>
