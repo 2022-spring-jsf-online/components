@@ -10,11 +10,11 @@ export class ShopService {
     getShoppingCartItems() {
         const theCart = [
             {
-                item: "book",
+                item: "coffee mug",
                 quantity: 1
             },
             {
-                item: "coffee mug",
+                item: "book",
                 quantity: 1
             },
             {
@@ -22,7 +22,7 @@ export class ShopService {
                 quantity: 1
             }
         ];
-        
+
         return theCart;
     }
 }
