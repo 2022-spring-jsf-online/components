@@ -29,4 +29,17 @@ export class ShoppingCartComponent implements OnInit {
       );
   }
 
+  newItem = "";
+  addQuantity = () => {
+      this.myCart = [
+          ...this.myCart,
+          {
+              item: this.newItem,
+              quantity: 1
+          }
+      ]
+      this.newItem = '';
+  }
+
+
 }
