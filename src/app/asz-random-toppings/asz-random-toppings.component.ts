@@ -1,4 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { RandomToppingsService } from '../random-toppings.service';
+
+
+interface RandomToppingDisplay {
+  name: string;  
+}
+
 
 @Component({
   selector: 'app-asz-random-toppings',
@@ -7,9 +14,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AszRandomToppingsComponent implements OnInit {
 
-  constructor() { }
+  // Dependency injection
+  constructor(
+    private randomToppingSvc: RandomToppingsService
+  ) { }
+
+  availableToppings: RandomToppingDisplay[] = [];
 
   ngOnInit(): void {
+    const pt = this.randomToppingSvc.getRandomToppingsFromTheCloud();
+    console.log(pt);
   }
 
 }
