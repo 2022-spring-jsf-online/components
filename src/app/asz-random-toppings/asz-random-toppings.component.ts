@@ -22,8 +22,25 @@ export class AszRandomToppingsComponent implements OnInit {
   availableToppings: RandomToppingDisplay[] = [];
 
   ngOnInit(): void {
+
     const pt = this.randomToppingSvc.getRandomToppingsFromTheCloud();
     console.log(pt);
+
+    this.availableToppings = pt.map(
+      x => ({
+        ...x
+      })
+    );
   }
+
+  topping = "";
+
+  get randomTopping() {    
+    let randomTopping = Math.floor(Math.random() * this.availableToppings.length) + 1;
+    return this.availableToppings[randomTopping].name    
+    ;
+  }
+  
+  showRandomTopping = () => this.topping = this.randomTopping;
 
 }

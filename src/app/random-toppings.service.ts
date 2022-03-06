@@ -32,6 +32,26 @@ export class RandomToppingsService {
       {
         name: 'Jalepeno'
       }      
+      ,
+      {
+        name: 'Peppers'
+      }      
+      ,
+      {
+        name: 'Cheese'
+      }      
+      ,
+      {
+        name: 'Mushrooms'
+      }      
+      ,
+      {
+        name: 'Anchovies'
+      }      
+      ,
+      {
+        name: 'Canadian Bacon'
+      }      
     ];
 
     return randomToppingsFromCloud;

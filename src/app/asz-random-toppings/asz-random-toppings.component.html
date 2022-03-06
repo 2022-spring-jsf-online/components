@@ -6,17 +6,15 @@
         <button            
             mat-fab
             color="primary"
+            (click)="showRandomTopping()"
         >
             Topping
         </button>        
         <br>
         <br>
-        <div>
-            
-        </div>
-        <br>
         <h3>
-            Random Topping:
-        </h3>        
+            Random Topping: {{ topping }}            
+        </h3>  
+        <br>        
     </mat-card-content>
 </mat-card>
