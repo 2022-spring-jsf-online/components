@@ -28,7 +28,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     , MatButtonModule
     , MatCheckboxModule
     , MatInputModule
-    ,MatFormFieldModule
+    , MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
