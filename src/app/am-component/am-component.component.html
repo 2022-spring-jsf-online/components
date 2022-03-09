@@ -1,26 +1,19 @@
 <mat-card>
     <mat-card-title>
-        Component Example
+      Changing Table Column Display
     </mat-card-title>
     <mat-card-content>
-        <button
-            mat-mini-fab
-            (click)="checkAll()"
-        >
-            All
-        </button>
-        &nbsp;
-        <button
-            mat-mini-fab
-            color="secondary"
-            (click)="uncheckAll()"
-        >
-            None
-        </button>
-       
-        <br>
-        <h3>
-            Total: {{ totalPrice | currency }}
-        </h3>        
+
+      <button mat-fab (click)="shuffle()"> Shuffle </button>
+      
+      <table mat-table [dataSource]="data" class="mat-elevation-z8">
+        <ng-container [matColumnDef]="column" *ngFor="let column of displayedColumns">
+          <th mat-header-cell *matHeaderCellDef> {{column}} </th>
+          <td mat-cell *matCellDef="let topping"> {{topping[column]}} </td>
+        </ng-container>     
+        <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+        <tr mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>
+      </table>
+               
     </mat-card-content>
 </mat-card>
