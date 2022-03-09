@@ -4,17 +4,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { PizzaToppingsComponent } from './pizza-toppings/pizza-toppings.component';
 
+import {Component, OnInit} from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { EbAdditionComponent } from './eb-addition/eb-addition.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PizzaToppingsComponent
+    PizzaToppingsComponent,
+    EbAdditionComponent
   ],
   imports: [
     BrowserModule
@@ -23,6 +29,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
+    , MatInputModule
+    , MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
