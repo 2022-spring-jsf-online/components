@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TkAdditionComponent implements OnInit {
 
-  constructor() { }
+  export class AppComponent {
+    toggle = true;
+    status = "Enable";
 
-  ngOnInit(): void {
+    enableDisableRule(job) {
+      this.toggle = !this.toggle;
+      this.status = this.toggle ? "Enable" : "Disable";
+    }
   }
-
-}
