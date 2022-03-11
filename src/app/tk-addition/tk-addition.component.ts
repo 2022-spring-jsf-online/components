@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './tk-addition.component.html',
   styleUrls: ['./tk-addition.component.css']
 })
-export class TkAdditionComponent implements ngOnInit {
+export class TkAdditionComponent implements OnInit {
 
 export class AppComponent {
   toggle = true;
