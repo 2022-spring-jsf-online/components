@@ -16,13 +16,14 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { AdAdditionComponent } from './ad-addition/ad-addition.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ShoppingCartComponent,
     PizzaToppingsComponent
-    , TjsMultiplicationComponent
+    , TjsMultiplicationComponent, AdAdditionComponent
   ],
   imports: [
     BrowserModule
