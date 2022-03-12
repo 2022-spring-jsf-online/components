@@ -12,10 +12,10 @@ export class AdAdditionComponent implements OnInit {
   ngOnInit(): void {
   }
 
-numberOne = 10;
-numberTwo = 90;
-total = 100;
+numberOne = 1;
+numberTwo = 2.20462;
+total = 0;
 
-add = () => this.total = this.numberOne + this.numberTwo;
+add = () => this.total = this.numberOne * this.numberTwo;
 
 }
