@@ -5,13 +5,12 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './tk-addition.component.html',
   styleUrls: ['./tk-addition.component.css']
 })
-export class TkAdditionComponent implements OnInit {
+export class TkAdditionComponent {
 
-export class AppComponent {
   toggle = true;
   status = "Enable";
 
-  enableDisableRule(job) {
+  enableDisableRule() {
     this.toggle = !this.toggle;
     this.status = this.toggle ? "Enable" : "Disable";
   }
