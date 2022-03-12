@@ -12,12 +12,20 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSlideToggle, MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { IpAdditionComponent } from './ip-addition/ip-addition.component';
+import { MatIconModule } from '@angular/material/icon';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+
+import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
     AppComponent,
+    IpAdditionComponent,
+    ShoppingCartComponent,
     PizzaToppingsComponent,
-    IpAdditionComponent
+    TjsMultiplicationComponent
   ],
   imports: [
     BrowserModule
@@ -27,6 +35,9 @@ import { IpAdditionComponent } from './ip-addition/ip-addition.component';
     , MatButtonModule
     , MatCheckboxModule
     , MatSlideToggleModule
+    , MatIconModule
+    , MatFormFieldModule
+    , MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
