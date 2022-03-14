@@ -12,7 +12,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatIconModule } from '@angular/material/icon';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
-
+import { RcRandomNumberComponent } from './rc-random-number/rc-random-number.component';
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -23,6 +23,7 @@ import { MatInputModule } from '@angular/material/input';
     ShoppingCartComponent,
     PizzaToppingsComponent
     , TjsMultiplicationComponent
+    ,     RcRandomNumberComponent
   ],
   imports: [
     BrowserModule
