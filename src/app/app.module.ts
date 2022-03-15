@@ -12,15 +12,22 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatIconModule } from '@angular/material/icon';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { RcRandomNumberComponent } from './rc-random-number/rc-random-number.component';
+import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { EbAdditionComponent } from './eb-addition/eb-addition.component';
-import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    PizzaToppingsComponent,
-    EbAdditionComponent
+    AppComponent
+    , ShoppingCartComponent
+    , PizzaToppingsComponent
+    , TjsMultiplicationComponent
+    , RcRandomNumberComponent
+    , EbAdditionComponent
   ],
   imports: [
     BrowserModule
@@ -31,6 +38,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     , MatCheckboxModule
     , MatInputModule
     , MatFormFieldModule
+    , MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
