@@ -10,6 +10,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatSlideToggle, MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { IpAdditionComponent } from './ip-addition/ip-addition.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatTableModule } from '@angular/material/table';
@@ -23,6 +25,10 @@ import { AmComponentComponent } from './am-component/am-component.component';
 @NgModule({
   declarations: [
     AppComponent,
+    IpAdditionComponent,
+    ShoppingCartComponent,
+    PizzaToppingsComponent,
+    TjsMultiplicationComponent,
     PizzaToppingsComponent,
     ShoppingCartComponent,
     PizzaToppingsComponent,
@@ -37,6 +43,8 @@ import { AmComponentComponent } from './am-component/am-component.component';
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
+    , MatSlideToggleModule
+    , MatIconModule
     , MatFormFieldModule
     , MatInputModule
     , MatTableModule
