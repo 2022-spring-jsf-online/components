@@ -39,9 +39,8 @@ import { TkAdditionComponent } from './tk-addition/tk-addition.component';
     TjsMultiplicationComponent,
     RcRandomNumberComponent,
     AmComponentComponent,
-    TkAdditionComponent,
     EbAdditionComponent,
-    AmComponentComponent
+    TkAdditionComponent
   ],
   imports: [
     BrowserModule
