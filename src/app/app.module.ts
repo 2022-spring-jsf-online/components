@@ -4,7 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { PizzaToppingsComponent } from './pizza-toppings/pizza-toppings.component';
 
+import {Component, OnInit} from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatCardModule } from '@angular/material/card';
@@ -20,9 +22,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { RcRandomNumberComponent } from './rc-random-number/rc-random-number.component';
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
+import { EbAdditionComponent } from './eb-addition/eb-addition.component';
 import { AmComponentComponent } from './am-component/am-component.component';
 import { TkAdditionComponent } from './tk-addition/tk-addition.component';
-
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { TkAdditionComponent } from './tk-addition/tk-addition.component';
     TjsMultiplicationComponent,
     RcRandomNumberComponent,
     AmComponentComponent,
-    TkAdditionComponent
+    TkAdditionComponent,
+    EbAdditionComponent,
+    AmComponentComponent
   ],
   imports: [
     BrowserModule
@@ -46,12 +50,11 @@ import { TkAdditionComponent } from './tk-addition/tk-addition.component';
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
+    , MatInputModule
+    , MatFormFieldModule
     , MatSlideToggleModule
     , MatIconModule
-    , MatFormFieldModule
-    , MatInputModule
     , MatTableModule
-    , MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
