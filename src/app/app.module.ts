@@ -12,22 +12,32 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatSlideToggle, MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { IpAdditionComponent } from './ip-addition/ip-addition.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatTableModule } from '@angular/material/table';
 import { MatIconModule } from '@angular/material/icon';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { RcRandomNumberComponent } from './rc-random-number/rc-random-number.component';
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { EbAdditionComponent } from './eb-addition/eb-addition.component';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
+import { AmComponentComponent } from './am-component/am-component.component';
 
 @NgModule({
   declarations: [
-    AppComponent
-    , ShoppingCartComponent
-    , PizzaToppingsComponent
-    , TjsMultiplicationComponent
-    , RcRandomNumberComponent
-    , EbAdditionComponent
+    AppComponent,
+    IpAdditionComponent,
+    ShoppingCartComponent,
+    PizzaToppingsComponent,
+    TjsMultiplicationComponent,
+    PizzaToppingsComponent,
+    ShoppingCartComponent,
+    PizzaToppingsComponent,
+    TjsMultiplicationComponent,
+    RcRandomNumberComponent,
+    EbAdditionComponent,
+    AmComponentComponent
   ],
   imports: [
     BrowserModule
@@ -38,7 +48,9 @@ import { MatInputModule } from '@angular/material/input';
     , MatCheckboxModule
     , MatInputModule
     , MatFormFieldModule
+    , MatSlideToggleModule
     , MatIconModule
+    , MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
