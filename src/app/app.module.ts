@@ -36,7 +36,7 @@ import { TkAdditionComponent } from './tk-addition/tk-addition.component';
     PizzaToppingsComponent,
     TjsMultiplicationComponent,
     RcRandomNumberComponent,
-    AmComponentComponent
+    AmComponentComponent,
     TkAdditionComponent
   ],
   imports: [
