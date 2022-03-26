@@ -1,0 +1,143 @@
+<mat-card>
+    <mat-card-title>
+        Eduardo's Component
+    </mat-card-title>
+     <mat-card-content>
+         <mat-form-field>
+             <!-- Addition -->
+             <mat-label>
+                 Number 1
+             </mat-label>
+             <input  
+                matInput
+                type="number"
+                [(ngModel)]="numberOneAdd"
+            />
+         </mat-form-field>
+         &nbsp; + &nbsp;
+         <mat-form-field>
+            <mat-label>
+                Number 2
+            </mat-label>
+            <input  
+                matInput 
+                type="number" 
+                [(ngModel)]="numberTwoAdd"
+            />
+        </mat-form-field>
+        &nbsp;
+        <button 
+            mat-mini-fab
+            (click)="add()"
+        >
+            =
+        </button>
+        &nbsp;
+        {{ totalAdd }}
+
+        <br /><br />
+
+        <!-- Subtraction -->
+        <mat-form-field>
+            <mat-label>
+                Number 1
+            </mat-label>
+            <input  
+               matInput
+               type="number"
+               [(ngModel)]="numberOneSub"
+           />
+        </mat-form-field>
+        &nbsp; - &nbsp;
+        <mat-form-field>
+           <mat-label>
+               Number 2
+           </mat-label>
+           <input  
+               matInput 
+               type="number" 
+               [(ngModel)]="numberTwoSub"
+           />
+       </mat-form-field>
+       &nbsp;
+       <button 
+           mat-mini-fab
+           (click)="subtract()"
+       >
+           =
+       </button>
+       &nbsp;
+       {{ totalSub }}
+
+       <br /><br />
+
+       <!-- Division -->
+       <mat-form-field>
+        <mat-label>
+            Number 1
+        </mat-label>
+        <input  
+           matInput
+           type="number"
+           [(ngModel)]="numberOneDiv"
+       />
+    </mat-form-field>
+    &nbsp; / &nbsp;
+    <mat-form-field>
+       <mat-label>
+           Number 2
+       </mat-label>
+       <input  
+           matInput 
+           type="number" 
+           [(ngModel)]="numberTwoDiv"
+       />
+   </mat-form-field>
+   &nbsp;
+   <button 
+       mat-mini-fab
+       (click)="divide()"
+   >
+       =
+   </button>
+   &nbsp;
+   {{ totalDiv }}
+
+   <br /> <br />
+
+   <!-- Multiplication -->
+   <mat-form-field>
+    <mat-label>
+        Number 1
+    </mat-label>
+    <input  
+       matInput
+       type="number"
+       [(ngModel)]="numberOneMult"
+   />
+</mat-form-field>
+&nbsp; * &nbsp;
+<mat-form-field>
+   <mat-label>
+       Number 2
+   </mat-label>
+   <input  
+       matInput 
+       type="number" 
+       [(ngModel)]="numberTwoMult"
+   />
+</mat-form-field>
+&nbsp;
+<button 
+   mat-mini-fab
+   (click)="multiply()"
+>
+   =
+</button>
+&nbsp;
+{{ totalMult }}
+
+
+     </mat-card-content>
+      
+</mat-card>
