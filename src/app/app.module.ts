@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+
 import { MatSlideToggle, MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { IpAdditionComponent } from './ip-addition/ip-addition.component';
 import { MatInputModule } from '@angular/material/input';
@@ -23,6 +24,7 @@ import { RcRandomNumberComponent } from './rc-random-number/rc-random-number.com
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { EbAdditionComponent } from './eb-addition/eb-addition.component';
 import { AmComponentComponent } from './am-component/am-component.component';
+import { TkAdditionComponent } from './tk-addition/tk-addition.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,8 @@ import { AmComponentComponent } from './am-component/am-component.component';
     TjsMultiplicationComponent,
     RcRandomNumberComponent,
     EbAdditionComponent,
-    AmComponentComponent
+    AmComponentComponent,
+    TkAdditionComponent
   ],
   imports: [
     BrowserModule
