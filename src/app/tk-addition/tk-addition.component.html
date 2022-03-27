@@ -1,0 +1,14 @@
+<mat-card>
+  <mat-card-title>
+    Takyra's Component
+  </mat-card-title>
+  <mat-card-content>
+    <button
+      mat-raised-button
+      (click)="enableDisableRule()"
+      [ngClass]="{'green' : toggle, 'red': !toggle}"
+    >
+      {{status}}
+    </button>
+  </mat-card-content>
+</mat-card>
