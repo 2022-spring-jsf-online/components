@@ -13,7 +13,6 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { AszRandomToppingsComponent } from './asz-random-toppings/asz-random-toppings.component';
-
 import { MatSlideToggle, MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { IpAdditionComponent } from './ip-addition/ip-addition.component';
 import { MatInputModule } from '@angular/material/input';
@@ -26,6 +25,7 @@ import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplicat
 import { EbAdditionComponent } from './eb-addition/eb-addition.component';
 import { AmComponentComponent } from './am-component/am-component.component';
 import { TkAdditionComponent } from './tk-addition/tk-addition.component';
+import { TemperatureConverterComponent } from './temperature-converter/temperature-converter.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +43,8 @@ import { TkAdditionComponent } from './tk-addition/tk-addition.component';
     RcRandomNumberComponent,
     EbAdditionComponent,
     AmComponentComponent,
-    TkAdditionComponent
+    TkAdditionComponent,
+    TemperatureConverterComponent
   ],
   imports: [
     BrowserModule
