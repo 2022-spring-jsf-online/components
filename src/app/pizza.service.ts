@@ -9,6 +9,7 @@ export class PizzaService {
 
   getPizzaToppingsFromTheCloud() {
     // Pretend we make a web service call here.
+
     const toppingsFromWebService = [
       {
         name: 'Olives'

@@ -5,6 +5,7 @@ interface PizzaToppingDisplay {
   name: string;
   price: number;
   checked: boolean;
+
 }
 
 @Component({
@@ -13,6 +14,7 @@ interface PizzaToppingDisplay {
   styleUrls: ['./pizza-toppings.component.css']
 })
 export class PizzaToppingsComponent implements OnInit {
+
 
   // Magic DI... Dependency injection...
   constructor(
@@ -27,6 +29,7 @@ export class PizzaToppingsComponent implements OnInit {
     console.log(pt);
 
     this.availablePizzaToppings = pt.map(
+
       x => ({
         ...x
         , checked: false
@@ -43,6 +46,7 @@ export class PizzaToppingsComponent implements OnInit {
         (acc, x) => acc + x.price
         , 0
       )
+
     ;
   }
   
