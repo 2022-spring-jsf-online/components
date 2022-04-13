@@ -15,30 +15,27 @@ interface PizzaToppingDisplay {
 })
 export class PizzaToppingsComponent implements OnInit {
 
-
-  // Magic DI... Dependency injection...
+  // Magic DI... Dependency Injection...
   constructor(
     private pizzaSvc: PizzaService
   ) { }
 
   availablePizzaToppings: PizzaToppingDisplay[] = [];
-
   ngOnInit(): void {
 
     const pt = this.pizzaSvc.getPizzaToppingsFromTheCloud();
     console.log(pt);
 
     this.availablePizzaToppings = pt.map(
-
-      x => ({
+      x =>({
         ...x
         , checked: false
       })
-    );    
+    );
+    console.log(this.availablePizzaToppings);
   }
-
-  get totalPrice() {
-    return this.availablePizzaToppings
+    get totalPrice(){
+      return this.availablePizzaToppings
       .filter(
         x => x.checked
       )
@@ -46,22 +43,16 @@ export class PizzaToppingsComponent implements OnInit {
         (acc, x) => acc + x.price
         , 0
       )
-
-    ;
-  }
-  
+      ;
+    } 
   checkAll = () => this.availablePizzaToppings = this.availablePizzaToppings.map(
     x => ({
-      ...x
-      , checked: true
+      ...x, checked: true
     })
   );
-
   uncheckAll = () => this.availablePizzaToppings = this.availablePizzaToppings.map(
     x => ({
-      ...x
-      , checked: false
+      ...x, checked: false
     })
   );
-
 }
