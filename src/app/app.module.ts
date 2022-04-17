@@ -29,6 +29,7 @@ import { TkAdditionComponent } from './tk-addition/tk-addition.component';
 import { TemperatureConverterComponent } from './temperature-converter/temperature-converter.component';
 import { AdAdditionComponent } from './ad-addition/ad-addition.component';
 import { matFormFieldAnimations, MatFormFieldModule } from '@angular/material/form-field';
+import { RportilloListComponent } from './rportillo-list/rportillo-list.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,7 +49,8 @@ import { matFormFieldAnimations, MatFormFieldModule } from '@angular/material/fo
     AmComponentComponent,
     AdAdditionComponent,
     TkAdditionComponent,
-    TemperatureConverterComponent
+    TemperatureConverterComponent,
+    RportilloListComponent
   ],
   imports: [
     BrowserModule
