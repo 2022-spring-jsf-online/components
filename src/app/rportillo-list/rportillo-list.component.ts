@@ -12,4 +12,6 @@ export class RportilloListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  typesOfPizzaToppings: string[] = ['Pepperoni', 'Sausage', 'Mushrooms', 'Jalapenos', 'Pineapple'];
+
 }

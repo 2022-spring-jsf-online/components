@@ -30,6 +30,7 @@ import { TemperatureConverterComponent } from './temperature-converter/temperatu
 import { AdAdditionComponent } from './ad-addition/ad-addition.component';
 import { matFormFieldAnimations, MatFormFieldModule } from '@angular/material/form-field';
 import { RportilloListComponent } from './rportillo-list/rportillo-list.component';
+import {MatListModule} from '@angular/material/list';
 @NgModule({
   declarations: [
     AppComponent,
@@ -65,6 +66,7 @@ import { RportilloListComponent } from './rportillo-list/rportillo-list.componen
     , MatSlideToggleModule
     , MatIconModule
     , MatTableModule
+    , MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
