@@ -1,0 +1,16 @@
+<mat-card>
+	<mat-card-title>
+		Ricardo's List Component
+	</mat-card-title>
+	<mat-card-content>
+		<mat-selection-list #shoes>
+  			<mat-list-option *ngFor="let toppings of typesOfPizzaToppings">
+    			{{toppings}}
+  			</mat-list-option>
+
+			<p>
+  			Options selected: {{shoes.selectedOptions.selected.length}}
+			</p>
+		</mat-selection-list>
+	</mat-card-content>
+<mat-card>
